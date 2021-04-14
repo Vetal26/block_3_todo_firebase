@@ -1,0 +1,181 @@
+[debug] [2021-04-14T13:32:26.105Z] ----------------------------------------------------------------------
+[debug] [2021-04-14T13:32:26.108Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Веталь\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-14T13:32:26.109Z] CLI Version:   9.10.0
+[debug] [2021-04-14T13:32:26.109Z] Platform:      win32
+[debug] [2021-04-14T13:32:26.109Z] Node Version:  v14.13.0
+[debug] [2021-04-14T13:32:26.111Z] Time:          Wed Apr 14 2021 16:32:26 GMT+0300 (Москва, стандартное время)
+[debug] [2021-04-14T13:32:26.111Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-14T13:32:26.125Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-14T13:32:26.125Z] > authorizing via signed-in user (vbshmit@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Веталь\Desktop\work\block3\block_3_todo_firebase
+
+[debug] [2021-04-14T13:33:48.849Z] ----------------------------------------------------------------------
+[debug] [2021-04-14T13:33:48.851Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Веталь\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-14T13:33:48.851Z] CLI Version:   9.10.0
+[debug] [2021-04-14T13:33:48.852Z] Platform:      win32
+[debug] [2021-04-14T13:33:48.852Z] Node Version:  v14.13.0
+[debug] [2021-04-14T13:33:48.853Z] Time:          Wed Apr 14 2021 16:33:48 GMT+0300 (Москва, стандартное время)
+[debug] [2021-04-14T13:33:48.853Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-14T13:33:48.862Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-14T13:33:48.863Z] > authorizing via signed-in user (vbshmit@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Веталь\Desktop\work\block3\block_3_todo_firebase
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-04-14T13:35:39.968Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-04-14T13:35:40.924Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-04-14T13:35:40.924Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project todojs-5c5ac (Todojs) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-04-14T13:35:46.877Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-14T13:35:46.877Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-14T13:35:47.641Z] <<< HTTP RESPONSE 200 {"date":"Wed, 14 Apr 2021 13:35:46 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:35:47.666Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/todojs-5c5ac/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-14T13:35:49.072Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:35:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-04-14T13:35:49.076Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/todojs-5c5ac/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-04-14T13:35:50.709Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:35:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:00.723Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/todojs-5c5ac/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-14T13:36:02.487Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-04-14T13:36:02.498Z] > refreshing access token with scopes: []
+[debug] [2021-04-14T13:36:02.499Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-14T13:36:02.795Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 14 Apr 2021 13:36:02 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:02.820Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todojs-5c5ac [none]
+[debug] [2021-04-14T13:36:03.410Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todojs-5c5ac 200
+[debug] [2021-04-14T13:36:03.411Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todojs-5c5ac {"projectId":"todojs-5c5ac","projectNumber":"545703399493","displayName":"Todojs","name":"projects/todojs-5c5ac","resources":{"hostingSite":"todojs-5c5ac","storageBucket":"todojs-5c5ac.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[debug] [2021-04-14T13:36:19.772Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-14T13:36:19.773Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-14T13:36:20.300Z] <<< HTTP RESPONSE 200 {"date":"Wed, 14 Apr 2021 13:36:19 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:20.515Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/todojs-5c5ac/locations/europe-west1/instances?databaseId=todojs-5c5ac-default-rtdb&validateOnly=true  
+ {"type":"default_database"}
+[debug] [2021-04-14T13:36:21.633Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:21.641Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/todojs-5c5ac/locations/europe-west1/instances?databaseId=todojs-5c5ac-default-rtdb  
+ {"type":"default_database"}
+[debug] [2021-04-14T13:36:23.883Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-04-14T13:36:31.685Z] >>> HTTP REQUEST GET https://todojs-5c5ac-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json  
+ 
+[debug] [2021-04-14T13:36:33.020Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Wed, 14 Apr 2021 13:36:32 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for todojs-5c5ac-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-04-14T13:36:33.034Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/todojs-5c5ac/services/firestore.googleapis.com  
+ 
+[debug] [2021-04-14T13:36:34.392Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:34.395Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/todojs-5c5ac  
+ 
+[debug] [2021-04-14T13:36:35.253Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:35.254Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-04-14T13:36:35.256Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-14T13:36:35.257Z] > authorizing via signed-in user (vbshmit@gmail.com)
+[debug] [2021-04-14T13:36:35.257Z] [iam] checking project todojs-5c5ac for permissions ["firebase.projects.get"]
+[debug] [2021-04-14T13:36:35.259Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/todojs-5c5ac:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-04-14T13:36:36.443Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=787","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-04-14T13:36:40.053Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/todojs-5c5ac/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-04-14T13:36:41.398Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:41.401Z] Found ruleset: projects/todojs-5c5ac/rulesets/65c49ec9-151e-48c0-8f1c-9109053ff8f2
+[debug] [2021-04-14T13:36:41.403Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/todojs-5c5ac/rulesets/65c49ec9-151e-48c0-8f1c-9109053ff8f2  
+ 
+[debug] [2021-04-14T13:36:42.628Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-04-14T13:36:45.050Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/todojs-5c5ac/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-04-14T13:36:45.050Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/todojs-5c5ac/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-04-14T13:36:45.802Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:45.805Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-04-14T13:36:45.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-14T13:36:45.815Z] > authorizing via signed-in user (vbshmit@gmail.com)
+[debug] [2021-04-14T13:36:45.816Z] [iam] checking project todojs-5c5ac for permissions ["firebase.projects.get"]
+[debug] [2021-04-14T13:36:45.816Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/todojs-5c5ac:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-04-14T13:36:47.030Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:46 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=781","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:47.033Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/todojs-5c5ac/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-04-14T13:36:47.034Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/todojs-5c5ac/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-04-14T13:36:48.262Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-14T13:36:48.875Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 14 Apr 2021 13:36:48 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-04-14T13:38:07.867Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-04-14T13:38:08.240Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-04-14T13:38:08.241Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.4.1","browserURL":"https://www.gstatic.com/firebasejs/8.4.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.4.1/firebase.tgz"},"live":{"version":"8.4","browserURL":"https://www.gstatic.com/firebasejs/live/8.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.4/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.4.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.4.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.4.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.4.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.4.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.4.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.memory.js"}}
+[info] +  Wrote y/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Веталь\Desktop\work\block3\block_3_todo_firebase 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1053833546&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
