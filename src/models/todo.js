@@ -1,4 +1,4 @@
-import getRandomIntInclusive from '../utils'
+import getRandomIntInclusive from '../utils/utils'
 
 export default class Todo {
     constructor(todo) {

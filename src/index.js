@@ -88,8 +88,8 @@ function deleteCompleted() {
 }
 
 function updateIndexTodo(currentElem, prevElem) {
-    let currentTodoId = +currentElem.getAttribute('id');
-    let prevTodoId = prevElem ? +prevElem.getAttribute('id') : null;
+    let currentTodoId = currentElem.getAttribute('id');
+    let prevTodoId = prevElem ? prevElem.getAttribute('id') : null;
     list.updateList(currentTodoId, prevTodoId);
 }
 

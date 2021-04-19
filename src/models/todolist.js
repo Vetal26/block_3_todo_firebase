@@ -1,13 +1,14 @@
-import {db} from '../firebase';
-import {config} from '../config';
+import {db} from '../utils/firebase';
 import Todo from './todo';
+
+let todosId = [];
 
 export default class TodoList {
     constructor() {
         this.todos = [];
     }
 
-    get todoList() {
+    getTodoList() {
         return this.todos;
     }
 
@@ -21,6 +22,16 @@ export default class TodoList {
                 this.todos.push(new Todo(todo));
             });
         });
+
+        await db.collection('todoListId').doc('todosId').get().then((doc) => {
+            if (doc.data().ids) {
+                todosId = doc.data().ids;
+            }
+        });
+
+        this.todos.sort((a,b) => {
+            return todosId.indexOf(a.id) - todosId.indexOf(b.id);
+        })
     }
 
     async addTodo(title) {
@@ -33,8 +44,18 @@ export default class TodoList {
         .catch((error) => {
             console.error("Error adding document: ", error);
         });
+
         todo = new Todo(todo);
         this.todos.push(todo);
+        todosId.push(todo.id);
+
+        await db.collection('todoListId').doc('todosId').update({ids: todosId})
+        .then(() => {
+            console.log("Document successfully updated!");
+        })
+        .catch((error) => {
+            console.error("Error updating document: ", error);
+        });
         return todo;
     }
 
@@ -53,6 +74,7 @@ export default class TodoList {
  
         let todo = this.todos[todoIdx];
         this.todos = [...this.todos.slice(0, todoIdx), ...this.todos.slice(todoIdx + 1)];
+        this.updateListIds();
         return todo;
     }
 
@@ -60,7 +82,7 @@ export default class TodoList {
         let batch = db.batch();
 
         for (let todo of this.todos) {
-            let td = db.collection('todos').doc(todo.id);
+            let td = db.collection('todos').doc(todo.getTodoItem('id'));
             batch.update(td, { isDone: bool});
         }
 
@@ -83,8 +105,7 @@ export default class TodoList {
 
     async removeCopleted() {
         let batch = db.batch();
-
-        for (let todo of this.getCompletedTodo()) {
+        for (let todo of this.getTodoList().filter(todo => todo.getTodoItem('isDone') === true)) {
             let td = db.collection('todos').doc(todo.id);
             batch.delete(td);
         }
@@ -95,7 +116,8 @@ export default class TodoList {
             console.error("Error removing documents: ", error);
         });
 
-        this.todos = this.getActiveTodo();
+        this.todos = this.getTodoList().filter((todo) => todo.getTodoItem('isDone') === false);
+        this.updateListIds();
     }
 
     async toggleTodo(id) {
@@ -120,33 +142,41 @@ export default class TodoList {
 
     filterTodos(filter) {
         if (filter === 'active') {
-          return this.getActiveTodo();
+          return this.getTodoList().filter((todo) => todo.getTodoItem('isDone') === false);
         }
         if (filter === 'completed') {
-          return this.getCompletedTodo();
+          return this.getTodoList().filter((todo) => todo.getTodoItem('isDone') === true);
         }
-        return this.todoList;
-    }
-    
-    getCompletedTodo() {
-        return this.todoList.filter((todo) => todo.isDone === true);
-    }
-    
-    getActiveTodo() {
-        return this.todoList.filter((todo) => todo.isDone === false);
+        if (filter === 'all'){
+            return this.getTodoList();
+        }
     }
 
     async updateList(currentTodoId, prevTodoId) {
-
         let currentTodoIdx = this.todos.findIndex(t => t.id === currentTodoId);
         let currentTodo = this.todos.splice(currentTodoIdx, 1);
-        console.log(currentTodo)
+
         if (prevTodoId) {
             let prevTodoIdx = this.todos.findIndex(t => t.id === prevTodoId);
-            console.log(prevTodoIdx);
             this.todos.splice(prevTodoIdx + 1, 0, currentTodo[0]);
         } else if (!prevTodoId) {
             this.todos.unshift(currentTodo[0]);
         }
+        this.updateListIds();
+    }
+
+    async updateListIds() {
+        todosId = [];
+
+        for (let todo of this.getTodoList()) {
+            todosId.push(todo.getTodoItem('id'));
+        }
+        await db.collection('todoListId').doc('todosId').update({ids: todosId})
+        .then(() => {
+            console.log("Document successfully updated!");
+        })
+        .catch((error) => {
+            console.error("Error updating document: ", error);
+        });
     }
 }
