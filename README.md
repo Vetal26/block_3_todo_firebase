@@ -1,4 +1,4 @@
-# block_2_todo
+# Todo app
 
 ## The app allows:
 
@@ -10,7 +10,7 @@
 
 ## To run the application 
 
-To start a project, you need to be in the catalog, which contains package.json and run the commands in the following order
+To start a project, you need to be in the catalog and run the commands in the following order
 
 ```sh
 npm i
