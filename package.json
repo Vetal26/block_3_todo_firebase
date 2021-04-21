@@ -4,7 +4,7 @@
   "description": "- Add Todo\r - Delete Todo\r - Filter Todo\r - Prioritize Todo for completion.",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production webpack serve --mode production --env production",
+    "start": "cross-env NODE_ENV=production webpack --mode production",
     "start:dev": "cross-env NODE_ENV=development webpack serve --mode development --env development"
   },
   "author": "",
@@ -19,11 +19,7 @@
     "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "firebase": "^8.4.1"
-  },
-  "engines": {
-    "node": ">= 14.0.0"
   },
   "repository": {
     "type": "git",
